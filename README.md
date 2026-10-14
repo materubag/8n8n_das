@@ -64,51 +64,7 @@ dev      → feature/
 hotfix   → hotfix/
 ```
 
-## Datos procesados
 
-n8n normaliza la información recibida desde Trello antes de enviarla a las operaciones de GitHub.
-
-La estructura principal generada es:
-
-```json
-{
-  "event": {
-    "type": "updateCard",
-    "actionId": "..."
-  },
-  "board": {
-    "id": "...",
-    "name": "...",
-    "url": "..."
-  },
-  "card": {
-    "id": "...",
-    "shortId": 38,
-    "name": "...",
-    "description": "...",
-    "shortLink": "...",
-    "url": "..."
-  },
-  "list": {
-    "id": "...",
-    "name": "..."
-  },
-  "label": {
-    "name": "dev",
-    "color": "green"
-  },
-  "git": {
-    "type": "feature",
-    "branchName": "feature/...",
-    "branchSlug": "..."
-  },
-  "member": {
-    "id": "...",
-    "username": "...",
-    "fullName": "..."
-  }
-}
-```
 
 ## Tecnologías
 
